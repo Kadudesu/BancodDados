@@ -1,0 +1,47 @@
+***SQL***
+-Comandos
+>USE datatype
+>CREATE DATABASE database_name;
+>DROP DATABASE database_name;
+>CREATE TABLE table_name (
+	column1 datatype
+	column2 datatype
+	column3 datatype
+);
+>CREATE TABLE IF NOT EXISTS databasename( -- Checa se a tabela existe, se não, cria a tabela
+	...
+)
+
+SHOW TABLES -- Mostra todas as tabelas
+SHOW TABLES LIKE "tablename" -- Mostra uma tabela em especifico
+SHOW DATABASE -- Mostra todos os banco de dados
+
+***SQL2.0***
+-Comandos
+>ALTER TABLE table_name
+ ADD column_name datatype;
+
+>ALTER TABLE table_name
+ DROP COLUMN column_name;
+
+>ALTER TABLE table_name
+ RENAME COLUMN old_name to new_name;
+
+>ALTER TABLE table_name
+ MODIFY COLUMN column_name datatype;
+
+>CREATE TABLE table-name (
+	column1 datatype constraint,
+	column2 datatype constraint,
+	column3 datatype constraint,
+	...
+);
+
+-Restrições
+>NOT NULL
+>UNIQUE
+>PRIMARY KEY
+>FOREIGN KEY : chave primaria de outra tabela
+>CHECK
+>DEFAULT
+>CREATE INDEX : USado para criar e recuperar dados do banco rapidamente
